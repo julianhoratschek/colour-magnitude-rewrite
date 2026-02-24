@@ -13,7 +13,13 @@ I did not do any of the fancy "maths"-stuff, but tried to put the existing funct
 Clone from github
 
 ```shell
-git clone https://github.com/julianhoratschek/colour-magnitude-rewrite ./your_dest_folder
+git clone https://github.com/julianhoratschek/colour-magnitude-rewrite.git ./your_dest_folder
+```
+
+Enter directory
+
+```shell
+cd ./your_dest_folder/
 ```
 
 Create python virtual environment
