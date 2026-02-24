@@ -60,7 +60,9 @@ python main.py
 
 Please follow standard [toml-language specs](https://toml.io/en/).
 
-- Paths for fits files (String, multiple files allowed in one directory):
+#### Paths for fits files
+
+Each directory can contain multiple FITS-Files, all of those files will be loaded
 
 | Variable         | Value | Example               |
 | ---------------- | ----- | --------------------- |
@@ -72,13 +74,13 @@ Please follow standard [toml-language specs](https://toml.io/en/).
 | path_flat_long   | Path  |                       |
 | path_dark_flat   | Path  |                       |
 
-- Output directory (String):
+#### Output directory
 
-| Variable | Value | Example |
-| -------- | ----- | ------- |
-|path_result|Path|"./results/"|
+| Variable    | Value | Example      |
+| ----------- | ----- | ------------ |
+| path_result | Path  | "./results/" |
 
-- Flags for corrections (Booleans):
+#### Flags for corrections
 
 | Variable     | Value                | Description                                                    |
 | ------------ | -------------------- | -------------------------------------------------------------- |
@@ -86,21 +88,23 @@ Please follow standard [toml-language specs](https://toml.io/en/).
 | do_flat      | Boolean              | Flat field correction (uses path_flat_short and path_flat_long |
 | do_dark_flat | Boolean              | Dark correction for flat fields (uses path_dark_flat)          |
 
-- Names for colour (Strings, for labels during plotting):
+#### Names for colour
+
+These values will be displayed during plotting
 
 | Variable     | Value  | Description                |
 | ------------ | ------ | -------------------------- |
 | short_colour | String | Name for short wave colour |
 | long_colour  | String | Name for long wave colour  |
 
-- Position in degrees of the observatory (Float, optional):
+#### Position in degrees of the observatory
 
 | Variable  | Value | Example   |
 | --------- | ----- | --------- |
 | longitude | Float | 9.112354  |
 | latitude  | Float | 53.347889 |
 
-- Data (float):
+#### Data
 
 | Variable   | Value | Description                                                                                                                                                  |
 | ---------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
