@@ -56,11 +56,11 @@ Done 🎉
 python main.py
 ```
 
-### input_cmd.toml 💡
+## input_cmd.toml 💡
 
 Please follow standard [toml-language specs](https://toml.io/en/).
 
-#### Paths for fits files
+### Paths for fits files
 
 Each directory can contain multiple FITS-Files, all of those files will be loaded
 
@@ -74,13 +74,13 @@ Each directory can contain multiple FITS-Files, all of those files will be loade
 | path_flat_long   | Path  |                       |
 | path_dark_flat   | Path  |                       |
 
-#### Output directory
+### Output directory
 
 | Variable    | Value | Example      |
 | ----------- | ----- | ------------ |
 | path_result | Path  | "./results/" |
 
-#### Flags for corrections
+### Flags for corrections
 
 | Variable     | Value                | Description                                                    |
 | ------------ | -------------------- | -------------------------------------------------------------- |
@@ -88,7 +88,7 @@ Each directory can contain multiple FITS-Files, all of those files will be loade
 | do_flat      | Boolean              | Flat field correction (uses path_flat_short and path_flat_long |
 | do_dark_flat | Boolean              | Dark correction for flat fields (uses path_dark_flat)          |
 
-#### Names for colour
+### Names for colour
 
 These values will be displayed during plotting
 
@@ -97,14 +97,14 @@ These values will be displayed during plotting
 | short_colour | String | Name for short wave colour |
 | long_colour  | String | Name for long wave colour  |
 
-#### Position in degrees of the observatory
+### Position in degrees of the observatory
 
 | Variable  | Value | Example   |
 | --------- | ----- | --------- |
 | longitude | Float | 9.112354  |
 | latitude  | Float | 53.347889 |
 
-#### Data
+### Data
 
 | Variable   | Value | Description                                                                                                                                                  |
 | ---------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -113,7 +113,7 @@ These values will be displayed during plotting
 | threshold  | Float | threshold * std = detection threshold for star finding algorithm; std is standard deviation of the sky background, i.e., read out noise + dark current noise |
 | r_aperture | Float | radius of the circular aperture to count star flux, in units of FWHM; theoretically as large as possible, but possible contamination of other stars nearby   |
 
-### Navigation 📍
+## Navigation 📍
 
  | Input                    | Action                                                          |
  | ------------------------ | --------------------------------------------------------------- |
@@ -126,7 +126,7 @@ These values will be displayed during plotting
 - Plot via "FHD Diagram"
 - Save calculated data by selecting "Save data" in Plot Window
 
-### Colour coding 🎨
+## Colour coding 🎨
 
 - <span style="color:green">green:</span> Selected star (default)
 - <span style="color:blue">blue:</span> Selected star, labeled with user defined magnitudes
